@@ -1,0 +1,38 @@
+{
+    "_comment": "This is user 2's configuration for connecting with peers via a shared server",
+    "app": {
+        "keyPair": {
+            "pub": "4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c",
+            "priv": "41d8bf845c8ed964981944a8446828a09cf23bc68ef18c374eb149e8a63d983d4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c"
+        },
+        "config": {
+            "_comment": "maxIssue has to be at least 3 so the receipt covers: ourselves + server + peer",
+            "type": "server",
+            "maxIssue": 3,
+            "expire": 3600
+        },
+        "autoConnect": true,
+        "rootNodeId": ""
+    },
+    "storage": {
+        "bucket": "",
+        "local": {
+            "dataDir": "/tmp/universe-chat-storage/user2a"
+        }
+    },
+    "agent": {
+        "clients": [
+            {
+                "_comment": "Connecting via a shared server",
+                "serverPubKey": "c7da5642ea73aa63bb0f411079aa3a8f9c78eb14a34154c31e13ac4a28ad323d",
+                "innerEncrypt": 0,
+                "protocol": "tcp",
+                "host": "localhost",
+                "port": 9090,
+                "name": "server client #1",
+                "secure": false,
+                "reconnect": true
+            }
+        ]
+    }
+}

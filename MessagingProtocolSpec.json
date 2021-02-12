@@ -1,0 +1,21 @@
+{
+    "type": "u.protocol.chat",
+    "version": "0.1.0",
+    "defaultRootNode": {
+        "contentType": "u.types.root",
+        "creationTime": 1611683143095,
+        "creatorPubKey": "bdfa70c2f69331de68cd20fe657072c116703e287009dac560dfbb56fb8aa9f5",
+        "creatorSignature": "01261d5df8895ff969a4352aca62b3c54be29081c69d4b9b6b1373af7384d34103190960dff314c4c941602328d74c2d59ae64cd6f2c4319208663c673f39bcf00",
+        "id": "8bb221f26d2835f13cc03f75c90e83c9cd550eade5ce3059a86e499e2c8835da",
+        "publicLicense": "Free",
+        "version": 1
+    },
+    "sync": {
+        "room": {
+            "depth": 1,
+            "criterias": {},
+            "subscribeType": "stream",
+            "onlySubscribe": false
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "_comment": "This is user 1's configuration for connecting with peers p2p (acting as server)",
+    "app": {
+        "keyPair": {
+            "pub": "ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429",
+            "priv": "698c2b4474369cc5eacb2c8d93bb8bc545d1dbb244e104f2d26eb67bf3979a35ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429"
+        },
+        "config": {
+            "_comment": "maxIssue in the p2p case is the receipt for: peer + anyone else. Setting to 1 means only to peer",
+            "type": "p2p",
+            "maxIssue": 1,
+            "expire": 3600
+        },
+        "autoConnect": true,
+        "rootNodeId": ""
+    },
+    "storage": {
+        "_connect": {
+            "serverPubKey": "aba7c1f6a1ef77f121392c38a64f2fc8298014818354ed58da23c7bf82d11840",
+            "name": "RemoteStorage#1",
+            "innerEncrypt": 0,
+            "protocol": "tcp",
+            "host": "localhost",
+            "port": 9090,
+            "secure": false
+        },
+        "local": {
+            "dataDir": "/tmp/universe-chat-storage/user1b"
+        }
+    },
+    "network": {
+        "_clients": [
+            {
+                "_comment": "Connecting p2p directly to peer via hub",
+                "serverPubKey": "4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c",
+                "innerEncrypt": 0,
+                "protocol": "tcp",
+                "host": "localhost",
+                "port": 9191,
+                "name": "p2p hub client #1",
+                "secure": false,
+                "reconnect": true,
+                "hub": {}
+            }
+        ],
+        "servers": [
+            {
+                "_comment": "Allowing direct p2p connections from peer",
+                "clientPubKey": ["4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c"],
+                "protocol": "tcp",
+                "host": "localhost",
+                "port": 8081,
+                "name": "p2p server #1",
+                "innerEncrypt": 0
+            }
+        ]
+    }
+}

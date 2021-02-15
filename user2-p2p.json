@@ -23,11 +23,11 @@
         "clients": [
             {
                 "_comment": "Connecting p2p directly to peer",
-                "serverPubKey": "ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429",
+                "serverPubKey": "c7da5642ea73aa63bb0f411079aa3a8f9c78eb14a34154c31e13ac4a28ad323d",
                 "innerEncrypt": 0,
                 "protocol": "tcp",
                 "host": "localhost",
-                "port": 8081,
+                "port": 9090,
                 "name": "p2p client #1",
                 "secure": false,
                 "reconnect": true

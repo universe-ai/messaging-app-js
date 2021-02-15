@@ -15,12 +15,11 @@
         "rootNodeId": ""
     },
     "storage": {
-        "bucket": "",
         "local": {
             "dataDir": "/tmp/universe-chat-storage/user1a"
         }
     },
-    "agent": {
+    "network": {
         "clients": [
             {
                 "_comment": "Connecting via a shared server",

@@ -7,9 +7,9 @@
  * The server.json config file must conform to the ApplicationConfig specified in App.js.
  *
  */
-const {App} = require("../../core-js/app/App");
+const {App} = require("../core-js/protocol/App");
 const MessagingProtocolSpec = require("./MessagingProtocolSpec");
-const Logger = require("../../core-js/logger/Logger");
+const Logger = require("../core-js/logger/Logger");
 
 function run()
 {
@@ -20,7 +20,7 @@ function run()
     const logger = Logger(loggerId, ( (process ? process.env : window) || {} ).LOG_LEVEL );
 
     /* We run the base app just to get the Protocol instance connected,
-     * we do not need MessagingApp since the server is non-interactive
+     * we do not need a MessagingApp instance since the server is non-interactive
      * and it is just meant to do its work as defined by the protocol spec. */
     const app = new App(configFilePath, serverConfig, MessagingProtocolSpec, logger);
     app.init();

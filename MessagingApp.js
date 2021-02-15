@@ -87,11 +87,6 @@ class MessagingApp
         this._setupUI();
     }
 
-    async shutdown()
-    {
-        this.app.shutdown();
-    }
-
     _setupUI()
     {
         this.readline = Readline.createInterface({input: process.stdin, output: process.stderr});

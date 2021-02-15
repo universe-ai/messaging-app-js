@@ -108,7 +108,7 @@ class MessagingApp
             }
             else if (input == "/disconnect") {
                 this.app.disconnectNetwork();
-                this.logger.info("Stopping Agent and closing connections to peers...");
+                this.logger.info("Stopping Network Agent and closing connections to peers...");
                 return;
             }
             else if (input == "/quit") {
@@ -241,7 +241,7 @@ Type a message to send. It will be stored locally and synced when connected.
 
             if (data.deletedNodes) {
                 // Remove these messages from screen, if applicable.
-                console.error(`<${data.deletedNodes.length} messages deleted>`, data.deletedNodes);
+                console.error(`<${data.deletedNodes.length} messages deleted>`);
             }
         }
         catch(e) {

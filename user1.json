@@ -1,10 +1,7 @@
 {
     "_comment": "This is user 1's configuration for connecting with peers via a shared server",
     "app": {
-        "keyPair": {
-            "pub": "ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429",
-            "priv": "698c2b4474369cc5eacb2c8d93bb8bc545d1dbb244e104f2d26eb67bf3979a35ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429"
-        },
+        "keyPair": "user1-keys.json",
         "config": {
             "_comment": "maxIssue has to be at least 3 so the receipt covers: ourselves + server + peer",
             "type": "server",
@@ -23,7 +20,7 @@
         "clients": [
             {
                 "_comment": "Connecting via a shared server",
-                "serverPubKey": "c7da5642ea73aa63bb0f411079aa3a8f9c78eb14a34154c31e13ac4a28ad323d",
+                "serverPubKey": "9f26901689a76cd272fcf7077a8925b49e3432b25c0b43883af0b6230ea0adf7",
                 "innerEncrypt": 0,
                 "protocol": "tcp",
                 "host": "localhost",

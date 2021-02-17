@@ -1,10 +1,7 @@
 {
     "_comment": "This is user 2's configuration for connecting with peers p2p (acting as client)",
     "app": {
-        "keyPair": {
-            "pub": "4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c",
-            "priv": "41d8bf845c8ed964981944a8446828a09cf23bc68ef18c374eb149e8a63d983d4126e1c1f8ce221964fdaa37426fa246e849e4830d77cc736b787c064d86f74c"
-        },
+        "keyPair": "user2-keys.json",
         "config": {
             "_comment": "maxIssue in the p2p case is the receipt for: peer + anyone else. Setting to 1 means only to peer",
             "type": "p2p",
@@ -23,18 +20,18 @@
         "clients": [
             {
                 "_comment": "Connecting p2p directly to peer",
-                "serverPubKey": "c7da5642ea73aa63bb0f411079aa3a8f9c78eb14a34154c31e13ac4a28ad323d",
+                "serverPubKey": "6b0a7e34fdbf42c57e1020276c57ced1946d968c5a3bf2c2bdab23988f6ee32a",
                 "innerEncrypt": 0,
                 "protocol": "tcp",
                 "host": "localhost",
-                "port": 9090,
+                "port": 8081,
                 "name": "p2p client #1",
                 "secure": false,
                 "reconnect": true
             },
             {
                 "_comment": "Connecting p2p to peer via hub",
-                "serverPubKey": "ff609171bce158debf911d8e4421a111f9d421ae74a7fb7e47c52b10f2059429",
+                "serverPubKey": "6b0a7e34fdbf42c57e1020276c57ced1946d968c5a3bf2c2bdab23988f6ee32a",
                 "innerEncrypt": 0,
                 "protocol": "tcp",
                 "host": "localhost",

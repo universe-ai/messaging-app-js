@@ -4,7 +4,7 @@ const Readline = require("readline");
 const Agent = require("../core-js/protocol/Agent");
 const Receipt = require("../core-js/datamodel/Receipt");
 const {Node, NodeFactory} = require("../core-js/datamodel/Node");
-const {App} = require("../core-js/protocol/App");
+const App = require("../core-js/protocol/App");
 const AppUtil = require("../core-js/protocol/AppUtil");
 const Logger = require("../core-js/logger/Logger");
 
@@ -97,6 +97,7 @@ class MessagingApp
             return;
         });
 
+        // TODO: howto connect/disconnect to Storage if not autoconnect is set?
         this.readline.on("line", (input) => {
             if (input == "/refresh") {
                 this._refresh(30, null, true);

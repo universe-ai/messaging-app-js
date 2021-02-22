@@ -264,7 +264,7 @@ Type a message to send. It will be stored locally and synced when connected.
     {
         const time = new Date(node.getCreationTime()).toLocaleString();
         const senderAlias = this._getSenderAlias(node.getCreatorPubKey());
-        const direction = node.getCreatorPubKey() === this.appConfig.keyPair.pub ? "<" : ">";
+        const direction = node.getCreatorPubKey() === this.appConfig.keyPair.publicKey ? "<" : ">";
         const message = node.getDataString();
 
         console.log(`${time}: ${senderAlias} ${direction} ${message}`);
@@ -275,7 +275,7 @@ Type a message to send. It will be stored locally and synced when connected.
      */
     _getSenderAlias(pubKey)
     {
-        if (pubKey === this.appConfig.keyPair.pub) {
+        if (pubKey === this.appConfig.keyPair.publicKey) {
             return "(me)";
         }
 
@@ -315,14 +315,14 @@ Type a message to send. It will be stored locally and synced when connected.
         const receipts = [];
         if (this.appConfig.config.type === "server") {
             // Issue to ourselves, and it will get extended to server and peer (maxIssue at least set to 3).
-            const receipt = AppUtil.createReceipt(nodeId, now, expire, maxIssue, this.appConfig.keyPair.pub, this.appConfig.keyPair);
+            const receipt = AppUtil.createReceipt(nodeId, now, expire, maxIssue, this.appConfig.keyPair.publicKey, this.appConfig.keyPair);
             receipts.push(receipt);
         }
         else {
             // p2p mode
             // Since we don't have multi receipt yet we create two receipts.
             // First: just for ourselves
-            const receipt = AppUtil.createReceipt(nodeId, now, expire, 1, this.appConfig.keyPair.pub, this.appConfig.keyPair);
+            const receipt = AppUtil.createReceipt(nodeId, now, expire, 1, this.appConfig.keyPair.publicKey, this.appConfig.keyPair);
             receipts.push(receipt);
             // Second: To our peer(s)
             receipts.push(... this.targetPubKeys.map( pubKey => AppUtil.createReceipt(nodeId, now, expire, maxIssue, pubKey, this.appConfig.keyPair) ) );

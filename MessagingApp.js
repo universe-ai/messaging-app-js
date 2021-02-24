@@ -1,12 +1,12 @@
-const Hash = require("../core-js/util/hash");
+const {Hash} = require("@universe-ai/util");
 const MessagingProtocolSpec = require("./MessagingProtocolSpec");
 const Readline = require("readline");
-const Agent = require("../core-js/protocol/Agent");
-const Receipt = require("../core-js/datamodel/Receipt");
-const {Node, NodeFactory} = require("../core-js/datamodel/Node");
-const App = require("../core-js/protocol/App");
-const AppUtil = require("../core-js/protocol/AppUtil");
-const Logger = require("../core-js/logger/Logger");
+const Agent = require("@universe-ai/core").ProtocolAgent;
+const {Receipt} = require("@universe-ai/core");
+const {Node, NodeFactory} = require("@universe-ai/core");
+const {App} = require("@universe-ai/core");
+const {AppUtil} = require("@universe-ai/core");
+const {Logger} = require("@universe-ai/util");
 
 /**
  * This messaging application supports closed-group direct peer-to-peer communication.

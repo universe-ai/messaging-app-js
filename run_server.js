@@ -7,9 +7,9 @@
  * The server.json config file must conform to the ApplicationConfig specified in App.js.
  *
  */
-const {App} = require("../core-js/protocol/App");
+const {App} = require("@universe-ai/core");
 const MessagingProtocolSpec = require("./MessagingProtocolSpec");
-const Logger = require("../core-js/logger/Logger");
+const {Logger} = require("@universe-ai/util");
 
 function run()
 {

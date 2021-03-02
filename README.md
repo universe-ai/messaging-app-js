@@ -27,7 +27,7 @@ See the files `userX.json`, `userX-p2p.json` and `server.json`.
 
 ### Run using central server
 ```sh
-./run-server.json server.json
+./run_server.js server.json
 ```
 
 ```sh
@@ -36,4 +36,10 @@ See the files `userX.json`, `userX-p2p.json` and `server.json`.
 
 ```sh
 ./run.js user2.json
+```
+
+## Debugging
+Set the `LOG_LEVEL` environment variable for verbose logging:
+```
+LOG_LEVEL="debug" ./run_server.js server.json
 ```

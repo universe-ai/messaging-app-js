@@ -41,6 +41,17 @@
                 "reconnect": true,
                 "hub": {}
             }
-        ]
+        ],
+         "servers": [
+             {
+                 "_comment": "Allowing direct p2p connections from peer",
+                 "clientPubKey": ["6b0a7e34fdbf42c57e1020276c57ced1946d968c5a3bf2c2bdab23988f6ee32a"],
+                 "protocol": "websocket",
+                 "host": "0.0.0.0",
+                 "port": 8080,
+                 "name": "p2p server #1",
+                 "innerEncrypt": 0
+             }
+         ]
     }
 }

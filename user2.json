@@ -28,6 +28,18 @@
                 "name": "server client #1",
                 "secure": false,
                 "reconnect": true
+            },
+            {
+
+                "_comment": "Connecting via a shared server",
+                "serverPubKey": "9f26901689a76cd272fcf7077a8925b49e3432b25c0b43883af0b6230ea0adf7",
+                "innerEncrypt": 0,
+                "protocol": "websocket",
+                "host": "localhost",
+                "port": 4430,
+                "name": "server client #1",
+                "secure": false,
+                "reconnect": true
             }
         ]
     }

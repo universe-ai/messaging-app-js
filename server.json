@@ -37,7 +37,7 @@
             {
                 "clientPubKey": ["6b0a7e34fdbf42c57e1020276c57ced1946d968c5a3bf2c2bdab23988f6ee32a", "a99600d3292cae8ceeac0271164e23dd52302351a8a16c5c263d894ff243343d"],
                 "protocol": "websocket",
-                "host": "localhost",
+                "host": "0.0.0.0",
                 "port": 4430,
                 "cert": "",
                 "key": "",

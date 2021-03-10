@@ -1,6 +1,6 @@
 # Universe Chat
 
-This example project come with two configured users and a server.
+This example project comes with two configured users and a server.
 
 This chat app is preconfigured to be run in two separate modes, either as 1) direct peer-to-peer mode, or 2) using a central server for message relaying.
 
@@ -43,3 +43,5 @@ Set the `LOG_LEVEL` environment variable for verbose logging:
 ```
 LOG_LEVEL="debug" ./run_server.js server.json
 ```
+## License
+This project is released under the _MIT_ license. Refer to the [LICENSE](https://github.com/universe-ai/messaging-app-js/blob/master/LICENSE) file for details.

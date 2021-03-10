@@ -1,9 +1,22 @@
 {
   "name": "UniverseExampleChat",
   "version": "0.1",
-  "description": "",
-  "author": "Universe.ai",
+  "description": "CLI messaging app based on the Universe Eye protocol for p2p, federated or centralized communications",
+  "keywords": ["cli", "terminal", "TUI", "client", "message", "messaging", "app", "universe", "eye", "protocol", "p2p", "peer-to-peer", "federated", "centralized", "server", "communication", "encrypted", "receipt", "consent", "chat"],
+  "author": "Universe.ai <devnull@universe.ai>",
+  "homepage": "https://universe.ai",
+  "bugs": {
+    "url": "https://github.com/universe-ai/messaging-app-js/issues"
+  },
   "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/universe-ai/messaging-app-js.git"
+  },
+  "engines": {
+      "node": ">=12"
+  },
   "dependencies": {
     "@universe-ai/core": "^0.3.2",
     "@universe-ai/util": "^1.1.0",
